@@ -1,0 +1,457 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.shield-icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Main content */
+main {
+    width: 100%;
+    padding: 0;
+}
+
+/* Hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fik.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#start-registration {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-registration:hover {
+    background-color: #cc5500;
+}
+
+/* Visi & Misi section */
+.visi-misi {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.visi-misi-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.upnvj-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.visi-misi h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.visi-misi p {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.visi-misi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.visi-misi li {
+    margin-bottom: 10px;
+}
+
+/* Announcements section */
+.announcements {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.announcements h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.announcements p {
+    margin-bottom: 30px;
+}
+
+.announcement-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.announcement-item p {
+    margin-bottom: 15px;
+}
+
+#download-schedule {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#download-schedule:hover {
+    background-color: #cc5500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .visi-misi-content {
+        flex-direction: column;
+    }
+
+    .upnvj-image {
+        width: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .announcement-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Register page styles */
+.breadcrumb {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.register-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-form input,
+.register-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.register-form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.register-form .checkbox input {
+    margin-right: 10px;
+}
+
+.register-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #cc5500;
+}
+
+.register-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-form a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+/* Login page styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section .shield-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.logo-section h1 {
+    color: #ff6600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.login-container h2 {
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input,
+.login-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.login-form button:hover {
+    background-color: #cc5500;
+}
+
+.login-container p {
+    font-size: 0.9rem;
+}
+
+.login-container a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

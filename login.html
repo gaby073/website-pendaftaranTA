@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - D3 Sistem Informasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-page">
+        <div class="login-container">
+            <div class="logo-section">
+                <span class="shield-icon">🛡️</span>
+                <h1>D3 SISTEM INFORMASI</h1>
+            </div>
+            <h2>Login D3 SI</h2>
+            <form class="login-form">
+                <label for="username">NIM / NIP</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <label for="account-type">Akun Type</label>
+                <select id="account-type" required>
+                    <option value="mahasiswa">Mahasiswa</option>
+                    <option value="mahasiswa">Dosen</option>
+                </select>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Belum Punya Akun? <a href="register.html">Register</a> | <a href="index.html">Back To Home</a></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
