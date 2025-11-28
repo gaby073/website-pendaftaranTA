@@ -18,7 +18,9 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#pengumuman">Pengumuman</a></li>
-                    <li><a href="login.html">Login</a></li>
+
+                    <!-- FIX: login harus menuju folder Login -->
+                    <li><a href="./Login/login.html">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,8 +30,13 @@
         <section id="home" class="hero">
             <h1>Pendaftaran Pra TA Online</h1>
             <h2>D3 Sistem Informasi</h2>
-            <button id="start-registration">Mulai Pendaftaran</button>
-            <p>Sudah Punya Akun? <a href="login.html">Login</a></p>
+
+            <!-- FIX: tombol diarahkan ke Register -->
+            <button id="start-registration" onclick="window.location.href='./Register/register.html'">
+                Mulai Pendaftaran
+            </button>
+
+            <p>Sudah Punya Akun? <a href="./Login/login.html">Login</a></p>
         </section>
 
         <section id="about" class="visi-misi">
@@ -37,7 +44,7 @@
                 <img src="img/upnvj.png" alt="UPNVJ" class="upnvj-image">
                 <div class="text-content">
                     <h2>Visi & Misi D3 Sistem Informasi</h2>
-                    <p><strong>Visi</strong><br>Menjadi Program Studi Sistem Informasi Program Diploma Tiga yang unggul,berdaya saing, inovatif, dalam bidang pemrograman dan basis data di tingkat internasional yang beridentitas bela negara pada tahun 2025.</p>
+                    <p><strong>Visi</strong><br>Menjadi Program Studi Sistem Informasi Program Diploma Tiga yang unggul, berdaya saing, inovatif, dalam bidang pemrograman dan basis data di tingkat internasional yang beridentitas bela negara pada tahun 2025.</p>
                     <p><strong>Misi</strong></p>
                     <ul>
                         <li>Menghasilkan lulusan pendidikan terapan dalam bidang pemrograman dan basis data yang inovatif, berdaya saing guna menunjang ketahanan nasional.</li>
@@ -51,23 +58,27 @@
         <section id="pengumuman" class="announcements">
             <h2>Pengumuman</h2>
             <p>Harap baca semua pengumuman dan pemberitahuan secara berkala!</p>
+
             <div class="announcement-list">
                 <div class="announcement-item">
                     <h3>Jadwal Periode Sidang Akademik</h3>
                     <p>Harap baca periode pendaftaran sidang dibawah ini</p>
                     <button id="download-schedule">Unduh Periode Pendaftaran</button>
                 </div>
+
                 <div class="announcement-item">
                     <h3>Instrukti Registrasi Akun!</h3>
-                    <p>Saat membuat akun, harap isi data dengan benar, jelas dan tidak asal-asalan! jika lupa password segera hubungi admin koordinator TA</p>
+                    <p>Saat membuat akun, harap isi data dengan benar, jelas dan tidak asal-asalan! Jika lupa password segera hubungi admin koordinator TA.</p>
                 </div>
+
                 <div class="announcement-item">
                     <h3>Harap Baca Guideline!!</h3>
-                    <p>Untuk mahasiswa dan dosen, guideline dapat diunduh pada halaman dashboard awal setelah login</p>
+                    <p>Untuk mahasiswa dan dosen, guideline dapat diunduh pada halaman dashboard awal setelah login.</p>
                 </div>
+
                 <div class="announcement-item">
                     <h3>Registrasi Akun Mahasiswa</h3>
-                    <p>Halaman registrasi hanya digunakan untuk pendaftaran akun mahasiswa</p>
+                    <p>Halaman registrasi hanya digunakan untuk pendaftaran akun mahasiswa.</p>
                 </div>
             </div>
         </section>
